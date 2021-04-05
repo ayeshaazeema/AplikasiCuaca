@@ -1,10 +1,10 @@
-package com.ayeshaazeema.aplikasicuaca.ui.notifications
+package com.ayeshaazeema.aplikasicuaca.ui.prediction
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class PredictionViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is notifications Fragment"
