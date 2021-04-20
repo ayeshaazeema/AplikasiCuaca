@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 data class ForecastResponse(
 
 	@field:SerializedName("rain")
-	val rain: RainResponse? = null,
+	val rain: RainForecast? = null,
 
 	@field:SerializedName("visibility")
 	val visibility: Int? = null,
@@ -14,22 +14,22 @@ data class ForecastResponse(
 	val timezone: Int? = null,
 
 	@field:SerializedName("main")
-	val main: MainResponse? = null,
+	val main: MainForecast? = null,
 
 	@field:SerializedName("clouds")
-	val clouds: CloudsResponse? = null,
+	val clouds: CloudsForecast? = null,
 
 	@field:SerializedName("sys")
-	val sys: SysResponse? = null,
+	val sys: SysForecast? = null,
 
 	@field:SerializedName("dt")
 	val dt: Int? = null,
 
 	@field:SerializedName("coord")
-	val coord: CoordResponse? = null,
+	val coord: CoordForecast? = null,
 
 	@field:SerializedName("weather")
-	val weather: List<WeatherItemResponse?>? = null,
+	val weather: List<WeatherItemForecast?>? = null,
 
 	@field:SerializedName("name")
 	val name: String? = null,
@@ -44,16 +44,16 @@ data class ForecastResponse(
 	val base: String? = null,
 
 	@field:SerializedName("wind")
-	val wind: WindResponse? = null
+	val wind: WindForecast? = null
 )
 
-data class CloudsResponse(
+data class CloudsForecast(
 
 	@field:SerializedName("all")
 	val all: Int? = null
 )
 
-data class WeatherItemResponse(
+data class WeatherItemForecast(
 
 	@field:SerializedName("icon")
 	val icon: String? = null,
@@ -68,7 +68,7 @@ data class WeatherItemResponse(
 	val id: Int? = null
 )
 
-data class SysResponse(
+data class SysForecast(
 
 	@field:SerializedName("country")
 	val country: String? = null,
@@ -86,13 +86,13 @@ data class SysResponse(
 	val type: Int? = null
 )
 
-data class RainResponse(
+data class RainForecast(
 
 	@field:SerializedName("1h")
 	val jsonMember1h: Double? = null
 )
 
-data class CoordResponse(
+data class CoordForecast(
 
 	@field:SerializedName("lon")
 	val lon: Double? = null,
@@ -101,7 +101,7 @@ data class CoordResponse(
 	val lat: Double? = null
 )
 
-data class MainResponse(
+data class MainForecast(
 
 	@field:SerializedName("temp")
 	val temp: Double? = null,
@@ -122,7 +122,7 @@ data class MainResponse(
 	val tempMax: Double? = null
 )
 
-data class WindResponse(
+data class WindForecast(
 
 	@field:SerializedName("deg")
 	val deg: Int? = null,

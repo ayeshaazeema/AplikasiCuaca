@@ -44,7 +44,7 @@ data class WeatherItemDaily(
 	val id: Int? = null
 )
 
-data class Rain(
+data class RainDaily(
 
 	@field:SerializedName("1h")
 	val jsonMember1h: Double? = null

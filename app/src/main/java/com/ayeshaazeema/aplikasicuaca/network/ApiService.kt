@@ -24,7 +24,7 @@ interface ApiService {
     ): Single<ForecastResponse>
 
     @GET("find?")
-    fun getForecastByGPS(
+    fun getDailyWeatherFromGPS(
         @Query("lat") latitude: String,
         @Query("lon") longitude: String,
         @Query("cnt") cnt: String,
