@@ -6,4 +6,6 @@
     <string name="prediction">Prediction</string>
     <string name="location">Location</string>
     <string name="imageview">ImageView</string>
+    <string name="bekasi">Bekasi</string>
+    <string name="celcius">º</string>
 </resources>

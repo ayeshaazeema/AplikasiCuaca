@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.ayeshaazeema.aplikasicuaca.ui.dashboard.DashboardFragment"
+        android:name="com.ayeshaazeema.aplikasicuaca.ui.location.LocationFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_location" />
 

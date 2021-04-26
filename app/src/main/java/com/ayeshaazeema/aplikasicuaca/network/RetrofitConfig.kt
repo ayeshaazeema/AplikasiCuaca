@@ -34,13 +34,13 @@ class RetrofitConfig {
         return api.getWeatherByGPS(latitude, longitude, units)
     }
 
-    fun getDailyWeatherFromGPS(
+    fun getDailyFromGPS(
         latitude: String,
         longitude: String,
         cnt: String,
         units: String
     ): Single<DailyResponse> {
-        return api.getDailyWeatherFromGPS(latitude, longitude, cnt, units)
+        return api.getDailyFromGPS(latitude, longitude, cnt, units)
     }
 
     private fun getOkHttpClient(): OkHttpClient {
